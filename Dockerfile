@@ -1,6 +1,7 @@
-# using python 3.9
-FROM python:3.9
+# using python 3.8
+FROM python:3.8
 
+RUN apt-get update && apt-get install -y python3-opencv
 # setting work directory
 WORKDIR /code
 
